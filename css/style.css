@@ -324,7 +324,18 @@ input[type="submit"]:hover {
 /*    left: 0;*/
     -webkit-transform: translate(0%, -50%);
     transform: translate(0%, -50%);
-    z-index: 9;
+    z-index: 999;
+}
+.overley{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: 1;
+    width: 100%;
+    background: rgb(120,21,118);
+    background: linear-gradient(242deg, rgba(120,21,118,0.6083683473389356) 3%, rgba(24,10,98,0.28904061624649857) 96%);
 }
 .v-middle2 {
     position: absolute;
