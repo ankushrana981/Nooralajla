@@ -334,8 +334,9 @@ input[type="submit"]:hover {
     height: 100%;
     z-index: 1;
     width: 100%;
-    background: rgb(120,21,118);
-    background: linear-gradient(242deg, rgba(120,21,118,0.6083683473389356) 3%, rgba(24,10,98,0.28904061624649857) 96%);
+    background:linear-gradient(109.6deg, rgb(78, 62, 255,0.6083683473389356) 11.2%, rgb(164, 69, 255,0.28904061624649857) 91.1%);;
+    /* background: linear-gradient(242deg, rgba(120,21,118,0.6083683473389356) 3%, rgba(24,10,98,0.28904061624649857) 96%);
+     */
 }
 .v-middle2 {
     position: absolute;
