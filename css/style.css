@@ -324,7 +324,7 @@ input[type="submit"]:hover {
 /*    left: 0;*/
     -webkit-transform: translate(0%, -50%);
     transform: translate(0%, -50%);
-    z-index: 999;
+    z-index: 9;
 }
 .overley{
     position: absolute;
@@ -775,7 +775,7 @@ hr {
     background: #1b1b1b;
     padding: 0 0 0 0;
     position: fixed;
-    top: -100px;
+    top: -101px;
     left: 0;
     width: 100%;
     z-index: 9999;
@@ -842,6 +842,7 @@ hr {
 .logo {
     padding: 0;
 }
+
 .logo-img {
     width: 130px;
     text-align: center;
@@ -5458,7 +5459,7 @@ height: 100% !important;
     border-bottom: 1px solid #222;
 }
 .second-footer .widget-area .widget {
-    padding: 45px 0;
+    padding: 45px 0 18px 0;
 }
 .second-footer .widget-area .widget p {
     color: rgba(255, 255, 255, 0.8);
