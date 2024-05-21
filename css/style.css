@@ -3772,7 +3772,7 @@ height: 100% !important;
 }
 .accordion-box .block .acc-content {
     position: relative;
-    display: none;
+    display: block;
 }
 .accordion-box .block .content {
     position: relative;
