@@ -322,39 +322,43 @@
                <div class="section-title"><span>Instructions</span></div>
             </div>
          </div>
-          <div class="row">
-              <div class="col-md-12">
-                  <ul class="accordion-box clearfix">
-                      <li class="accordion block active-block">
-                          <div class="acc-btn active"><span class="count">1.</span> Salik charges</div>
-                          <div class="acc-content">
-                              <div class="content">
-                                  <div class="text">In addition to the standard fees, please note that Salik charges will be applied as extra charges. Salik is Dubai's electronic toll collection system, and any toll incurred during the service will be added to the final bill</div>
-                              </div>
-                          </div>
-                      </li>
-                      <li class="accordion block">
-                          <div class="acc-btn active"><span class="count">2.</span> Fuel Policy</div>
-                          <div class="acc-content">
-                              <div class="content">
-                                  <div class="text">As a standard, our rental cars must be returned with a full tank of fuel. If the vehicle is not returned full, refueling charges plus a service fee of AED 50.00 will apply.
-
-                                    We also offer an Advance Fuel Purchase option for your convenience. This allows you to pre-pay for a full tank of fuel, so you can return the car at any fuel level without worrying about refueling or incurring extra charges. Note that there are no refunds for unused fuel.</div>
-                              </div>
-                          </div>
-                      </li>
-                      <li class="accordion block">
-                          <div class="acc-btn active"><span class="count">3.</span> Off Roading Rules</div>
-                          <div class="acc-content">
-                              <div class="content">
-                                  <div class="text">Off-road driving is not allowed. The customer is fully liable for any damage or additional costs resulting from off-road use. Please adhere to this policy to avoid penalties.</div>
-                              </div>
-                          </div>
-                      </li>
-                  </ul>
+        <div class="m-3">
+           <ul class="accordion-box row justify-content-between">
+             <div class="col-md-4 mb-3">
+               <li class="accordion block active-block ">
+                  <div class="acc-btn active"><span class="count">1.</span> Salik charges</div>
+                  <div class="acc-content">
+                      <div class="content">
+                          <div class="text">In addition to the standard fees, please note that Salik charges will be applied as extra charges. Salik is Dubai's electronic toll collection system, and any toll incurred during the service will be added to the final bill</div>
+                      </div>
+                  </div>
+              </li>
+             </div>
+             <div class="col-md-4 mb-3">
+                <li class="accordion block ">
+                    <div class="acc-btn active"><span class="count">2.</span> Fuel Policy</div>
+                    <div class="acc-content">
+                        <div class="content">
+                            <div class="text">As a standard, our rental cars must be returned with a full tank of fuel. If the vehicle is not returned full, refueling charges plus a service fee of AED 50.00 will apply.
+ 
+                              We also offer an Advance Fuel Purchase option for your convenience. This allows you to pre-pay for a full tank of fuel, so you can return the car at any fuel level without worrying about refueling or incurring extra charges. Note that there are no refunds for unused fuel.</div>
+                        </div>
+                    </div>
+                </li>
+             </div>
+              <div class="col-md-4">
+               <li class="accordion block">
+                  <div class="acc-btn active"><span class="count">3.</span> Off Roading Rules</div>
+                  <div class="acc-content">
+                      <div class="content">
+                          <div class="text">Off-road driving is not allowed. The customer is fully liable for any damage or additional costs resulting from off-road use. Please adhere to this policy to avoid penalties.</div>
+                      </div>
+                  </div>
+              </li>
               </div>
-
-          </div>
+           </ul>
+        </div>
+          
       </div>
   </section>
    <!-- Booking Search -->
@@ -368,12 +372,29 @@
             </div>
          </div>
          <div class="booking-inner clearfix">
-            <form action="#0" class="form1 brdr clearfix">
+            <form action="https://api.web3forms.com/submit" method="POST" class="form1 brdr clearfix">
+               <input type="hidden" name="access_key" value="594f0acc-2657-4914-a578-107c7efd799b">
+               <div class="col1 c1">
+                  <div class="input1_wrapper">
+                     <label>Name</label>
+                     <div class="input2_inner ">
+                        <input type="text" name="name" class="form-control input " placeholder="Name" required>
+                     </div>
+                  </div>
+               </div>
+               <div class="col1 c1">
+                  <div class="input1_wrapper">
+                     <label>Phone</label>
+                     <div class="input2_inner ">
+                        <input type="text" name="phone" class="form-control input " placeholder="Phone" required>
+                     </div>
+                  </div>
+               </div>
                <div class="col2 c3">
                   <div class="select1_wrapper">
                      <label>Choose Car Type</label>
                      <div class="select1_inner">
-                        <select class="select2 select" style="width: 100%">
+                        <select name="carType" class="select2 select" style="width: 100%">
                            <option value="0">Choose Car Type</option>
                            <option value="1">All</option>
                            <option value="2">Sedan Cars</option>
@@ -388,7 +409,7 @@
                   <div class="select1_wrapper">
                      <label>Pick Up Location</label>
                      <div class="select1_inner">
-                        <select class="select2 select" style="width: 100%">
+                        <select name="pickupLocation" class="select2 select" style="width: 100%">
                            <option value="0">Pick Up Location</option>
                            <option value="1">Dubai</option>
                            <option value="2">Abu Dhabi</option>
@@ -402,7 +423,7 @@
                   <div class="input1_wrapper">
                      <label>Pick Up Date</label>
                      <div class="input1_inner">
-                        <input type="text" class="form-control input datepicker" placeholder="Pick Up Date" required>
+                        <input name="pickupDate" type="text" class="form-control input datepicker" placeholder="Pick Up Date" required>
                      </div>
                   </div>
                </div>
@@ -410,7 +431,7 @@
                   <div class="select1_wrapper">
                      <label>Drop Off Location</label>
                      <div class="select1_inner">
-                        <select class="select2 select" style="width: 100%">
+                        <select name="dropoffLocation" class="select2 select" style="width: 100%">
                            <option value="0">Drop Off Location</option>
                            <option value="1">Alain</option>
                            <option value="2">Sharjah</option>
@@ -420,15 +441,18 @@
                      </div>
                   </div>
                </div>
+          
+             
                <div class="col1 c2">
                   <div class="input1_wrapper">
                      <label>Return Date</label>
                      <div class="input1_inner">
-                        <input type="text" class="form-control input datepicker" placeholder="Return Date">
+                        <input name="returnDate" type="text" class="form-control input datepicker" placeholder="Return Date">
                      </div>
                   </div>
                </div>
-               <div class="col3 c6">
+               <div class="col3 c6 mb-3 mb-md-0">
+                  <input type="hidden" name="redirect" value="https://web3forms.com/success">
                   <button type="submit" class="booking-button">Rent Now</button>
                </div>
             </form>
@@ -872,9 +896,9 @@
                         <div class="social-icons">
                            <ul class="list-inline">
                               <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
-                              <li><a href="#"><i class="fa-brands fa-snapchat"></i></a></li>
-                              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                              <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                              <li><a href="https://www.snapchat.com/add/nooralajla7?share_id=G6VACfVXGrg&locale=en-GB"><i class="fa-brands fa-snapchat"></i></a></li>
+                              <li><a href="https://www.instagram.com/nooralajla?igsh=MTF0NDAwaTMxNzlwZQ=="><i class="fa-brands fa-instagram"></i></a></li>
+                              <li><a href="https://www.tiktok.com/@nooralajla7?_t=8mXgH4V57xP&_r=1"><i class="fa-brands fa-tiktok"></i></a></li>
                            </ul>
                         </div>
                      </div>
@@ -886,7 +910,7 @@
                      <h3 class="widget-title">Quick Links</h3>
                      <ul>
                         <li><a href="about.html">About</a></li>
-                        <li><a href="team.html">Team</a></li>
+                        <li><a href="services.html">Services</a></li>
                         <li><a href="contact.html">Contact</a></li>
                      </ul>
                   </div>
@@ -898,8 +922,10 @@
                      <p>Want to be notified about our services. Just sign up and we'll send you a notification by email.
                      </p>
                      <div class="widget-newsletter">
-                        <form action="#">
-                           <input type="email" placeholder="Email Address" required>
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                           <input type="hidden" name="access_key" value="594f0acc-2657-4914-a578-107c7efd799b">
+                           <input type="email" name="email" placeholder="Email Address" required>
+                           <input type="hidden" name="redirect" value="https://web3forms.com/success">
                            <button type="submit"><i class="ti-arrow-top-right"></i></button>
                         </form>
                      </div>
@@ -929,7 +955,7 @@
                   <div class="booking-box">
                       <div class="booking-inner clearfix">
                         <form action="https://api.web3forms.com/submit" method="POST" class="form1 clearfix">
-                              <input type="hidden" name="access_key" value="47501fa9-a218-4c3d-b1e7-7f05da7da168">
+                              <input type="hidden" name="access_key" value="594f0acc-2657-4914-a578-107c7efd799b">
                               <div class="row">
                                   <div class="col-lg-6 col-md-12">
                                        <input type="text" name="name" placeholder="Full Name *" required>
