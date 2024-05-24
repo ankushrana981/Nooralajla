@@ -260,17 +260,25 @@
                      </div>
                   </div>
                </div>
+               <div class="col1 c1">
+                  <div class="input1_wrapper">
+                     <label>Email</label>
+                     <div class="input2_inner ">
+                        <input type="email" name="email" class="form-control input " placeholder="Email" required>
+                     </div>
+                  </div>
+               </div>
                <div class="col2 c3">
                   <div class="select1_wrapper">
                      <label>Choose Car Type</label>
                      <div class="select1_inner">
                         <select name="carType" class="select2 select" style="width: 100%">
-                           <option value="0">Choose Car Type</option>
-                           <option value="1">All</option>
-                           <option value="2">Sedan Cars</option>
-                           <option value="3">Sport Cars</option>
-                           <option value="4">SUVs</option>
-                           <option value="5">Convertible</option>
+                           <option value="">Choose Car Type</option>
+                           <option value="All">All</option>
+                           <option value="Sedan Cars">Sedan Cars</option>
+                           <option value="Sport Cars">Sport Cars</option>
+                           <option value="SUVs">SUVs</option>
+                           <option value="Convertible">Convertible</option>
                         </select>
                      </div>
                   </div>
@@ -400,10 +408,12 @@
                        <p>Want to be notified about our services. Just sign up and we'll send you a notification by email.
                        </p>
                        <div class="widget-newsletter">
-                          <form action="#">
-                             <input type="email" placeholder="Email Address" required>
-                             <button type="submit"><i class="ti-arrow-top-right"></i></button>
-                          </form>
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                           <input type="hidden" name="access_key" value="594f0acc-2657-4914-a578-107c7efd799b">
+                           <input name="email" type="email" placeholder="Email Address*" required>
+                           <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                           <button type="submit"><i class="ti-arrow-top-right"></i></button>
+                        </form>
                        </div>
                     </div>
                  </div>

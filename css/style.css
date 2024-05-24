@@ -3996,15 +3996,15 @@ height: 100% !important;
 }
 .form1 .col1 {
     float: left;
-    width: 11%;
+    width: 10%;
 }
 .form1 .col2 {
     float: left;
-    width: 14%;
+    width: 13%;
 }
 .form1 .col3 {
     float: left;
-    width: 12%;
+    width: 10%;
 }
 .form1 .c1 {
     border-right: 1px solid #f2f2f2;
@@ -4089,9 +4089,9 @@ height: 100% !important;
     background: var(--theme-color);
     color: #1b1b1b;
     font-family: 'Outfit', sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     text-decoration: none;
-    line-height: 60px;
+    line-height: 55px;
     position: relative;
     cursor: pointer;
     transition: all 0.3s ease-out;
@@ -4113,7 +4113,7 @@ height: 100% !important;
     content: '';
     display: block;
     position: absolute;
-    right: 20px;
+    right: 10px;
     top: 24px;
     pointer-events: none;
     content: "\e6b6";
@@ -4177,7 +4177,7 @@ height: 100% !important;
     content: '';
     display: block;
     position: absolute;
-    right: 20px;
+    right: 15px;
     top: 24px;
     pointer-events: none;
     content: "\e64b";

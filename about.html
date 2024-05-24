@@ -284,10 +284,12 @@
                        <p>Want to be notified about our services. Just sign up and we'll send you a notification by email.
                        </p>
                        <div class="widget-newsletter">
-                          <form action="#">
-                             <input type="email" placeholder="Email Address" required>
-                             <button type="submit"><i class="ti-arrow-top-right"></i></button>
-                          </form>
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="594f0acc-2657-4914-a578-107c7efd799b">
+                            <input name="email" type="email" placeholder="Email Address*" required>
+                            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                            <button type="submit"><i class="ti-arrow-top-right"></i></button>
+                         </form>
                        </div>
                     </div>
                  </div>
